@@ -1,0 +1,85 @@
+// ================================
+// Header
+// ================================
+
+.layout-header {
+  display: flex;
+  justify-content: space-between;
+  height: rem(80px);
+  z-index: 20;
+
+  @include media(">=md") {
+    height: rem(110px);
+  }
+
+  &.no-backdrop {
+    background-color: setcolor(blue);
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: rem(20px);
+
+  @include media(">=md") {
+    padding-left: rem(30px);
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.header-logo__svg {
+  width: rem(150px);
+  height: rem(31px);
+
+  @include media(">=md") {
+    width: rem(265px);
+    height: rem(54px);
+  }
+
+  text {
+    @include setfont(roboto-condensed, 700);
+    font-size: rem(22px);
+    text-transform: uppercase;
+  }
+}
+
+.header__nav-toggle {
+  @extend %naked-button;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(20px);
+  width: rem(35px);
+  height: rem(35px);
+  background-color: setcolor(gray, dark);
+  z-index: 30;
+
+  @include media(">=lg") {
+    display: none;
+  }
+
+  @include ico--menu;
+
+  .has-open-menu & {
+    position: fixed;
+    top: rem(40px);
+    @include ico--remove;
+
+    @include media(">=md") {
+      top: rem(55px);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: setcolor(yellow) !important;
+    font-size: 1.2em !important;
+  }
+}

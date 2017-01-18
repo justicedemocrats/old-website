@@ -1,0 +1,44 @@
+// ================================
+// Meda Query Breakpoints
+// ================================
+
+$breakpoints: (
+  xs: em(480),
+  sm: em(568),
+  md: em(768),
+  lg: em(1024),
+  xl: em(1220),
+  gr: em(1440)
+);
+
+
+// --------------------------------
+// Expose the breakpoints
+// --------------------------------
+
+head {
+  font-family: 'mo';
+
+  @include media(">=xs") {
+    font-family: 'xs'
+  }
+  @include media(">=sm") {
+    font-family: 'sm'
+  }
+  @include media(">=md") {
+    font-family: 'md'
+  }
+  @include media(">=lg") {
+    font-family: 'lg'
+  }
+  @include media(">=xl") {
+    font-family: 'xl'
+  }
+  @include media(">=gr") {
+    font-family: 'gr'
+  }
+}
+
+title {
+  font-family: 'mo, xs, sm, md, lg, xl, gr';
+}

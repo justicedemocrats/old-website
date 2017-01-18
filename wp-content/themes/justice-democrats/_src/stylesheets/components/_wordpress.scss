@@ -1,0 +1,36 @@
+// ================================
+// Wordpress
+// ================================
+
+
+.wp-caption {
+  width: auto !important;
+  margin-bottom: rem(30px);
+
+  img {
+    display: block;
+    margin-bottom: rem(10px);
+  }
+}
+
+.wp-caption-text {
+  text-align: right;
+  @include setfont(anonymous, 700);
+  font-size: rem(9px) !important;
+  line-height: rem(11px) !important;
+  text-transform: uppercase;
+  letter-spacing: rem(2px);
+  color: setcolor(blue);
+  margin: 0 !important;
+}
+
+.size-full {
+  width: 100%;
+}
+
+.alignleft {
+  @include media(">=md") {
+    float: left;
+    margin: rem(0 30px 20px 0);
+  }
+}

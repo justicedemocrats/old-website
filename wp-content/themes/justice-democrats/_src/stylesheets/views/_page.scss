@@ -1,0 +1,118 @@
+// ================================
+// Page
+// ================================
+
+
+.landing-page {
+  background-color: setcolor(white);
+  padding: rem(65px 0);
+  z-index: 2;
+  overflow: hidden;
+
+  @include media(">=lg") {
+    padding: rem(100px 0);
+  }
+
+  .has-backdrop & {
+    margin-top: rem(90px);
+
+    @include media(">=lg") {
+      margin-top: rem(290px);
+    }
+  }
+}
+
+.page__title {
+  display: inline-block;
+  color: setcolor(gray, dark);
+  @include setfont(alfa);
+  @include type(28, 30);
+  text-transform: uppercase;
+  border: rem(2px) solid setcolor(gray, dark);
+  padding: .3em .35em .16em;
+  margin-bottom: 1.7em;
+
+  @include media(">=md") {
+    @include type(38, 40);
+  }
+}
+
+.page__title--post {
+  margin-bottom: .4em;
+}
+
+.page-sidebar {
+  padding-top: 1.25em;
+
+  @include media(">=lg") {
+    padding-right: 30%;
+  }
+}
+
+.page-sidebar__parent {
+  @include setfont(alfa);
+  @include type(18, 24);
+  text-transform: uppercase;
+  color: setcolor(gray, dark);
+  padding: rem(8px 0);
+  margin-bottom: rem(40px);
+  letter-spacing: rem(1px);
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: rem(2px);
+    background-color: setcolor(gray, dark);
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+}
+
+.page-sidebar__siblings,
+.post-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    @include type(16, 22);
+
+    @include media(">=lg") {
+      @include type(18, 24);
+    }
+  }
+
+  li + li {
+    margin-top: rem(20px);
+  }
+
+  .current_page_item {
+    a {
+      font-weight: 700;
+      color: setcolor(blue, light);
+    }
+  }
+}
+
+.page__meta {
+  @include setfont(anonymous, 700);
+  text-transform: uppercase;
+  @include type(12, 16);
+  margin-bottom: rem(40px);
+  color: setcolor(blue, light);
+}
+
+.page__video {
+  margin-top: rem(40px);
+}
+
+.page__comments {
+  margin-top: rem(60px);
+  padding: rem(30px 10px 0);
+  background-color: rgba(setcolor(gray, light), .15);
+
+  @include media(">=md") {
+    padding: rem(30px 30px 0);
+  }
+}

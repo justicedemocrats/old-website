@@ -1,0 +1,28 @@
+// ================================
+// Variables
+// ================================
+
+// --------------------------------
+// Root Font Sizing
+// --------------------------------
+
+// <html> and <body> font sizes
+$html-font-size: 62.5%;
+$body-font-size: 16px;
+
+// Functions
+$em-base-multiplyer: 16px !default;
+$rem-base-multiplyer: 10px !default;
+
+// Import unit function
+@import "../tools/set-em";
+@import "../tools/set-rem";
+
+
+// --------------------------------
+// Directories
+// --------------------------------
+
+$dir-svgs: "../../assets/svgs/" !default;
+$dir-images: "../../assets/images/" !default;
+$dir-fonts: "../../assets/fonts/" !default;

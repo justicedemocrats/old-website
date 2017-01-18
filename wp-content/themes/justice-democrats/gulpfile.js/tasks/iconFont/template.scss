@@ -1,0 +1,77 @@
+// {{comment}}
+
+// default pseudo position
+$set_position: before;
+
+// reset the default icon styles
+%create-icon-reset {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: '{{fontName}}';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  color: inherit;
+  vertical-align: middle;
+}
+
+// default mixin to create icons
+@mixin create-icon($content: '', $position: $set_position) {
+  &::#{$position} {
+    content: $content;
+    @extend %create-icon-reset;
+    @content;
+  }
+}
+
+// ---------------------
+// Icon List
+// ---------------------
+
+{% for icon in icons -%}
+// {{icon.name}}
+{% endfor %}
+
+{% for icon in icons -%}
+// ---------------------
+// {{icon.name}}
+// ---------------------
+
+// variable
+$ico-{{icon.name}}: "\{{icon.code}}";
+
+// mixin
+@mixin ico--{{icon.name}}($set_position: $set_position) {
+  @include create-icon($ico-{{icon.name}}, $set_position) {
+    @content;
+  }
+}
+
+{% endfor %}
+
+// font-family
+@font-face {
+  font-family: '{{fontName}}';
+  src: url('{{fontPath}}/{{fontName}}.woff') format('woff2'),
+       url('{{fontPath}}/{{fontName}}.woff') format('woff'),
+       url('{{fontPath}}/{{fontName}}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Base icon class
+.ico {
+  @include create-icon();
+}
+
+// Modifier icon classes
+{% for icon in icons -%}
+
+.ico--{{icon.name}} {
+  @include ico--{{icon.name}};
+}
+
+{% endfor %}

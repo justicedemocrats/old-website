@@ -1,0 +1,23 @@
+// ================================
+// Grid
+// ================================
+
+$enable-gridlines: false !default;
+$spacing-unit: 10px;
+$grid-columns: 12 !default;
+$grid-gutter-width: 40px !default;
+
+// Rows Max-Width
+// $max-width-small:   rem(680px);
+// $max-width-medium:  rem(980px);
+// $max-width-large:   rem(1220px);
+// $max-width-xlarge:  rem(1440px);
+
+// Containers
+$container-max-widths: (
+  sm: rem(568px, $rem-base-multiplyer),
+  md: rem(768px, $rem-base-multiplyer),
+  lg: rem(1024px, $rem-base-multiplyer),
+  xl: rem(1220px, $rem-base-multiplyer),
+  gr: rem(1440px, $rem-base-multiplyer)
+) !default;

@@ -1,0 +1,78 @@
+// ================================
+// Footer
+// ================================
+
+.layout-footer {
+  z-index: 2;
+  background-color: setcolor(white);
+}
+
+.layout-footer__inner {
+  border-top: rem(3px) solid setcolor(gray, dark);
+  padding: rem(20px 0);
+}
+
+.layout-footer__sitemap {
+  margin-bottom: rem(10px);
+}
+
+.menu-footer {
+  list-style: none;
+  padding: 0;
+  margin: rem(0 0 30px);
+
+  @include media(">=md") {
+    display: flex;
+    margin: 0;
+  }
+
+  a {
+    @include setfont(roboto-condensed, 700);
+    text-transform: uppercase;
+    @include type(13, 18);
+    color: #292929;
+  }
+
+  .highlight a {
+    color: #6BA2AE;
+  }
+
+  li:not(.main-menu-item) {
+    display: none;
+  }
+
+  .main-menu-item {
+    margin-right: rem(25px);
+    margin-bottom: rem(10px);
+
+    @include media(">=md") {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.layout-footer__legal {
+  width: 100%;
+  max-width: rem(540px);
+  margin-top: rem(20px);
+
+  @include media(">=md") {
+    margin-top: 0;
+  }
+
+  p {
+    @include type(9, 16);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @include media(">=md") {
+      @include type(9, 24);
+    }
+  }
+}
+
+.layout-footer__email {
+  @include type(13, 26);
+  color: setcolor(blue);
+  font-weight: 700;
+}

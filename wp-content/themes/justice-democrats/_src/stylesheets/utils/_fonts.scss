@@ -1,0 +1,48 @@
+// ================================
+// Fonts
+// ================================
+
+// --------------------------------
+// @font-face
+// --------------------------------
+
+// Font Name
+// @include declare-font-face('font-brand', 'font-dir/', "Font-Name", 'font-weight', normal, normal);
+
+
+// --------------------------------
+// Font Mixin
+// --------------------------------
+
+// ex: @include setfont(font-one, 400)
+// First value is your $family and second value is your weight
+
+@mixin setfont($family: sans-serif, $weight: normal) {
+
+  // Default Font Stack
+  @if $family == "default" {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  // Roboto
+  @if $family == "roboto" {
+    font-family: $font-roboto;
+  }
+
+  // Roboto Condensed
+  @if $family == "roboto-condensed" {
+    font-family: $font-roboto-condensed;
+  }
+
+  // Anonymous Pro
+  @if $family == "anonymous" {
+    font-family: $font-anonymous;
+  }
+
+  // Alfa Slab One
+  @if $family == "alfa" {
+    font-family: $font-alfa;
+  }
+
+  font-weight: $weight;
+}

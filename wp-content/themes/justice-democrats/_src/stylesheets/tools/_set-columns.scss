@@ -1,0 +1,190 @@
+// ================================
+// Columns
+// ================================
+
+///
+/// Generates column classes based on the defined breakpoints,
+/// named with the convention `.col-breakpoint-x-y`, where
+/// `breakpoint` corresponds to a value in the $breakpoints sass map
+/// of include-media and `x` is a subdivision of `y`.
+///
+/// @link http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/ Taking the BEM naming convention a step further
+///
+/// @param {Arglist}   $columns  - Grid divisions
+///
+/// @example scss - Dividing the grid in thirds and fourths
+///  @include columns(3, 4);
+///
+///  /* Generates: */
+///  .col-phone-1-3, .col-tablet-1-3, .col-deskop-1-3
+///  .col-phone-2-3 (...)
+///
+
+@mixin columns($columns...) {
+  .col-xs {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  @each $i in $columns {
+    @for $n from 1 through $i {
+      .col-xs-#{$n} {
+        flex-basis: ($n / $i) * 100%;
+        max-width: ($n / $i) * 100%;
+      }
+    }
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media(#{'>=' + $breakpoint}) {
+      .col-#{$breakpoint} {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+      }
+
+      @each $i in $columns {
+        @for $n from 1 through $i {
+          .col-#{$breakpoint}-#{$n} {
+            flex-basis: ($n / $i) * 100%;
+            max-width: ($n / $i) * 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Generate auto classes for each breakpoint
+@mixin column-auto() {
+  .col-auto {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media(#{'>=' + $breakpoint}) {
+      .col-#{$breakpoint}-auto {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// Generate reset classes for each breakpoint
+@mixin column-reset() {
+  .col-reset {
+    flex-grow: 0;
+    flex-basis: 0;
+    flex: 0 1 auto;
+    max-width: none;
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media(#{'>=' + $breakpoint}) {
+      .col-#{$breakpoint}-reset {
+        flex-grow: 0;
+        flex-basis: 0;
+        flex: 0 1 auto;
+        max-width: none;
+      }
+    }
+  }
+}
+
+// Generate flexbox helper classes for each breakpoint
+@mixin column-helpers() {
+  .start-xs {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-xs {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-xs {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-xs {
+    align-items: flex-start;
+  }
+
+  .middle-xs {
+    align-items: center;
+  }
+
+  .bottom-xs {
+    align-items: flex-end;
+  }
+
+  .around-xs {
+    justify-content: space-around;
+  }
+
+  .between-xs {
+    justify-content: space-between;
+  }
+
+  .first-xs {
+    order: -1;
+  }
+
+  .last-xs {
+    order: 1;
+  }
+
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media(#{'>=' + $breakpoint}) {
+      .start-#{$breakpoint} {
+        justify-content: flex-start;
+        text-align: start;
+      }
+
+      .center-#{$breakpoint} {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .end-#{$breakpoint} {
+        justify-content: flex-end;
+        text-align: end;
+      }
+
+      .top-#{$breakpoint} {
+        align-items: flex-start;
+      }
+
+      .middle-#{$breakpoint} {
+        align-items: center;
+      }
+
+      .bottom-#{$breakpoint} {
+        align-items: flex-end;
+      }
+
+      .around-#{$breakpoint} {
+        justify-content: space-around;
+      }
+
+      .between-#{$breakpoint} {
+        justify-content: space-between;
+      }
+
+      .first-#{$breakpoint} {
+        order: -1;
+      }
+
+      .last-#{$breakpoint} {
+        order: 1;
+      }
+    }
+  }
+}

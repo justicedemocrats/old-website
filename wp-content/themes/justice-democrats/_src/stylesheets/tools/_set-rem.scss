@@ -1,0 +1,35 @@
+// ================================
+// rem Function
+// ================================
+
+/**
+ * Convert pixels to rem units.
+ *
+ * @param {string}  $pxValues                          Unit values. Can be single, mix, or group of 3 or 4.
+ * @param {tone}    ($baseSize|'$font-size-rem-base')  Set unit base, or defaults to defined value in settings.
+ *
+ * @return {string} converted rem units.
+ */
+
+@function rem($pxValues, $baseSize: $rem-base-multiplyer) {
+  // Create an empty list that we can dump values into
+  $remValues: ();
+  @each $value in $pxValues {
+    // Check to see if value is 0, auto, or inherited
+    // If so, do nothing and output value
+    @if $value == 0 or $value == auto or $value == inherit {
+      $remValues: append($remValues, $value);
+    }
+
+    // If the value is a pixel, convert to rem value
+    @else if unit($value) == 'px' {
+      $remValues: append($remValues, #{($value/$baseSize)}rem);
+    }
+
+    // For everything else, keep as is
+    @else {
+      $remValues: append($remValues, $value);
+    }
+  }
+  @return $remValues;
+}

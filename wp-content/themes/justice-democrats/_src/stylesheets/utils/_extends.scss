@@ -1,0 +1,125 @@
+// ================================
+// Extends & Placeholders
+// ================================
+
+
+// --------------------------------
+// Misc %placeholders
+// --------------------------------
+
+%module-padding {
+  padding-top: rem(50px);
+  padding-bottom: rem(50px);
+}
+
+
+// --------------------------------
+// Paragraph Sizing
+// --------------------------------
+
+%type-default {
+  @include type(16, 24);
+}
+
+%type-medium {
+  @include type(18, 32);
+}
+
+%type-large {
+  @include type(26, 36);
+}
+
+
+// --------------------------------
+// Wysiwyg Styles
+// --------------------------------
+
+%wysiwyg {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: setcolor(gray, dark);
+  }
+
+  h1,
+  h2 {
+    @include setfont(roboto-condensed, 700);
+    @include type(26, 26);
+    margin-bottom: 1.7em;
+    color: setcolor(blue);
+  }
+
+  h3 {
+    @include setfont(roboto, 700);
+    @include type(17, 23);
+    margin: 2em 0;
+  }
+
+  h4 {
+    @include setfont(anonymous, 700);
+    @include type(12, 14);
+    letter-spacing: .2em;
+    margin: 3.5em 0;
+  }
+
+  p,
+  li {
+    @include type(15, 24);
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: rem(25px);
+  }
+
+  ul,
+  ol {
+    margin-left: 1.25em;
+    padding-left: 0;
+  }
+
+  blockquote {
+    width: 100%;
+    background-color: setcolor(yellow);
+    font-weight: 300;
+    @include type(16, 26);
+    padding: rem(5px 8px);
+    margin: rem(0 30px 30px 0);
+
+    @include media(">=md") {
+      float: left;
+      width: rem(240px);
+      @include type(26, 36);
+    }
+
+    p {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      margin-bottom: 0;
+    }
+  }
+
+  hr {
+    border: rem(3px) solid setcolor(gray, dark);
+    margin: rem(45px 0);
+
+    @include media(">=md") {
+      margin: rem(70px 0);
+    }
+  }
+
+  a:not(.button) {
+    color: setcolor(blue, light);
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      color: setcolor(blue);
+    }
+  }
+}

@@ -1,0 +1,201 @@
+// ================================
+// Form Elements
+// ================================
+
+// --------------------------------
+// Default Styles
+// --------------------------------
+
+input,
+textarea,
+select,
+.custom-select {
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border: rem(3px) solid setcolor(white);
+  padding: rem(15px 15px);
+  margin-bottom: rem(15px);
+  @include setfont(roboto-condensed, 700);
+  @include type(19, 19);
+  vertical-align: middle;
+}
+
+// Unique styles that just apply to input/textarea/label
+input,
+textarea,
+label {
+  color: setcolor(white);
+
+  &:hover,
+  &:focus {
+    border-color: setcolor(yellow);
+  }
+}
+
+// Add the correct appearance, but also adjust the height to fit with our input fields.
+// This only matters for apple devices (height)
+select {
+  background: #fff;
+  height: rem(30px);
+  padding: rem(5px 10px);
+}
+
+.custom-select {
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+
+  @include ico--caret-down(after) {
+    position: absolute;
+    top: 50%;
+    right: rem(15px);
+    transform: translateY(-50%);
+  }
+
+  select {
+    width: 100%;
+    height: rem(55px);
+    margin: 0;
+    padding: rem(0 45px 0 15px);
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  select:focus {
+    outline: none;
+  }
+}
+
+// Reset Search Input
+input[type=search] {
+  -webkit-appearance: textfield;
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+// Make sure we are not adding the select height to multi select
+select[multiple] {
+  height: auto;
+}
+
+// Styles relevant to checkboxes
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+// Styles relevant to radio buttons
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+// Label specific styling
+label {
+  display: block;
+  margin-bottom: rem(5px);
+  font-weight: 400;
+  font-size: rem(15px);
+  font-weight: 700;
+
+  &.required {
+    &::after {
+      content: "*";
+      padding-left: rem(5px);
+    }
+  }
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: setcolor(white);
+  }
+}
+
+// Focus specific styling
+input:focus,
+textarea:focus {
+  border-color: setcolor(yellow);
+  background-color: rgba(setcolor(gray), .30);
+
+  &::placeholder {
+    opacity: .6;
+  }
+}
+
+// Submit input specific styling
+input[type="submit"] {
+  @extend %naked-button;
+  @extend %button;
+  width: auto;
+  border-radius: 0;
+  height: auto;
+}
+
+fieldset {
+  background-color: rgba(setcolor(gray, light), .25);
+  border: none;
+  padding: rem(30px 20px);
+  margin-bottom: rem(40px);
+
+  @include media(">=lg") {
+    padding: rem(30px);
+  }
+
+  label {
+    color: setcolor(gray);
+    @include setfont(roboto-condensed, 400);
+  }
+
+  input,
+  textarea,
+  .custom-select {
+    color: setcolor(gray);
+    border-color: rgba(setcolor(gray, dark), .5);
+    background-color: setcolor(white);
+
+    &:hover,
+    &:focus {
+      border-color: setcolor(blue, light);
+      background-color: setcolor(white);
+      color: setcolor(blue, light);
+    }
+  }
+
+  textarea {
+    height: 135px;
+  }
+}
+
+.field {
+  input,
+  textarea,
+  .custom-select {
+    margin-bottom: 0;
+  }
+}
+
+.field + .field {
+  margin-top: rem(20px);
+}
+
+.legend {
+  @include setfont(roboto-condensed, 700);
+  text-transform: uppercase;
+  @include type(24, 28);
+  margin-bottom: 1.5em;
+}
+
+.field-help {
+  @include setfont(anonymous, 700);
+  @include type(11, 13);
+  color: setcolor(blue, light);
+}

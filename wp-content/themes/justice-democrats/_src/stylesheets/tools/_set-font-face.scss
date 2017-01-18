@@ -1,0 +1,21 @@
+// ================================
+// @font-face
+// ================================
+
+// Temporary variable for selecting svg url hash
+$font-family-svg: "Font-Family-Name";
+
+// Mixin for generating @font-face declaration
+@mixin declare-font-face($font-family, $font-subpath, $font-filename, $font-weight: normal, $font-style: normal, $font-stretch: normal) {
+  @font-face {
+    font-family: #{$font-family};
+    src: url('#{$dir-fonts}#{$font-subpath}#{$font-filename}.eot');
+    src: url('#{$dir-fonts}#{$font-subpath}#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+         url('#{$dir-fonts}#{$font-subpath}#{$font-filename}.woff') format('woff'),
+         url('#{$dir-fonts}#{$font-subpath}#{$font-filename}.ttf') format('truetype'),
+         url('#{$dir-fonts}#{$font-subpath}#{$font-filename}.svg##{$font-family-svg}') format('svg'); // Change back to $font-family instead of $font-family-svg
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+  }
+}

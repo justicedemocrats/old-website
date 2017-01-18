@@ -1,0 +1,45 @@
+// ================================
+// Main
+// ================================
+
+main {
+  overflow: hidden;
+}
+
+
+// --------------------------------
+// Spacing
+// --------------------------------
+
+.spacing--xs {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+}
+
+.spacing--sm {
+  padding-top: rem(40px);
+  padding-bottom: rem(40px);
+}
+
+.spacing--md {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+}
+
+.spacing--lg {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+
+  @include media(">=lg") {
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
+  }
+}
+
+.spacing-top--sm {
+  padding-top: rem(30px);
+}
+
+.spacing-bottom--lg {
+  padding-bottom: rem(80px);
+}

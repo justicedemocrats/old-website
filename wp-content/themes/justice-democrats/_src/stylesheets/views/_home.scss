@@ -1,0 +1,131 @@
+// ================================
+// Home
+// ================================
+
+
+// --------------------------------
+// Intro
+// --------------------------------
+
+// background image
+.block-intro__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.43;
+    background-image: linear-gradient(-180deg, #4D736E 7%, rgba(32,68,87,0.00) 100%);
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+.block-intro__content {
+  padding: rem(50px 0 65px);
+  z-index: 2;
+
+  @include media(">=lg") {
+    padding: rem(110px 0);
+  }
+}
+
+.block-intro__heading {
+  @include type(28, 32);
+  text-transform: uppercase;
+  @include setfont(alfa);
+  color: setcolor(white);
+  margin-bottom: rem(30px);
+
+  @include media(">=md") {
+    @include type(38, 40);
+  }
+}
+
+// form
+.block-intro__form {
+  background-color: rgba(setcolor(gray, light), .85);
+  padding: rem(20px);
+  margin: 0;
+  color: setcolor(white);
+  text-align: center;
+
+  @include media(">=lg") {
+    padding: rem(50px);
+  }
+}
+
+.block-intro__form-description {
+  font-weight: 700;
+  @include type(14, 20);
+  margin-bottom: rem(20px);
+
+  @include media(">=lg") {
+    @include type(18, 24);
+  }
+}
+
+.block-intro__form-fieldset {
+  width: 100%;
+  max-width: rem(300px);
+  margin: 0 auto;
+}
+
+
+// --------------------------------
+// Landing
+// --------------------------------
+
+.block-landing {
+  background-color: setcolor(white);
+  padding: rem(65px 0);
+  z-index: 2;
+}
+
+.block-landing__post {
+  width: 100%;
+
+  @include media(">=lg") {
+    max-width: rem(560px);
+  }
+}
+
+.block-landing__post-preview {
+  margin-bottom: rem(30px);
+
+  p,
+  ul,
+  ol {
+    @include type(18, 30);
+  }
+}
+
+.block-landing__post-time {
+  display: block;
+  @include setfont(anonymous, 700);
+  @include type(10, 12);
+  letter-spacing: 2px;
+  color: setcolor(blue);
+  text-transform: uppercase;
+}
+
+.block-landing__post-video {
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}

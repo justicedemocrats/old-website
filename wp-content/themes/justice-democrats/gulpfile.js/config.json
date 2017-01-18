@@ -1,0 +1,73 @@
+{
+  "root": {
+    "src": "./_src",
+    "dest": "./"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "settings": {
+        "server": false,
+        "proxy": "l.justice-democrats",
+        "open": true,
+        "notify": false,
+        "reloadOnRestart": true,
+        "files": [
+          "./**/*.php",
+          "./**/*.html",
+          "!node_modules/"
+        ]
+      }
+    },
+
+    "js": {
+      "src": "./_src/js/app.js",
+      "dest": "assets/js",
+      "output": "app.js"
+    },
+
+    "css": {
+      "src": "stylesheets",
+      "dest": "./",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true,
+        "includePaths": [
+          "./node_modules/include-media/dist/"
+        ]
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "assets/images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "assets/fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "iconFont": {
+      "src": "icons",
+      "dest": "assets/fonts/iconfont",
+      "sassDest": "utils",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "svgSprite": {
+      "src": "icons",
+      "dest": "assets/images/sprite",
+      "extensions": ["svg"]
+    },
+
+    "production" : {
+      "rev": false
+    }
+  }
+}

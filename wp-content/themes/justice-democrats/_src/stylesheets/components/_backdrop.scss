@@ -1,0 +1,38 @@
+// ================================
+// Backdrop
+// ================================
+
+.comp-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(200px);
+  z-index: 1;
+
+  @include media(">=lg") {
+    height: rem(400px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: 1;
+  }
+
+  // overlay gradient
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.43;
+    background-image: linear-gradient(-180deg, #4D736E 7%, rgba(32,68,87,0.00) 100%);
+    z-index: 2;
+  }
+}
