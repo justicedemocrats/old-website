@@ -7,6 +7,11 @@
 <!--[if lte IE 9]><html class="no-js lt-ie10"><![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
+  <meta property="og:image" content="https://justicedemocrats.com/wp-content/uploads/2017/01/JusticeDemocratsAvatar.png" />
+  <meta property="og:url" content="https://justicedemocrats.com" />
+  <meta property="og:title" content="Justice Democrats" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Democrats that represent people, not corporations. Help us recruit and run hundreds of candidates in a unified campaign to replace every establishment Congressperson in 2018." />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
