@@ -7,7 +7,7 @@
 <!--[if lte IE 9]><html class="no-js lt-ie10"><![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <meta property="og:image" content="https://justicedemocrats.com/wp-content/uploads/2017/01/JusticeDemocratsAvatar.png" />
+  <meta property="og:image" content="http://justicedemocrats.com/wp-content/uploads/2017/01/JDshareLogo.png" />
   <meta property="og:url" content="https://justicedemocrats.com" />
   <meta property="og:title" content="Justice Democrats" />
   <meta property="og:type" content="website" />
@@ -19,7 +19,31 @@
   <title><?php bloginfo('name'); ?> &raquo; <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anonymous+Pro|Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
-
+  <script>
+    function getParameterByName(name, url) {
+      if (!url) {
+        url = window.location.href;
+      }
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+     }
+     function parseURL(url) {
+       var a=document.createElement('a');
+       a.href=url;
+       return a.hostname;
+     }
+     function actBlueReferralCode(tag) {
+       var utmSource = getParameterByName('utm_source') || parseURL(document.referrer)
+       var utmMedium = getParameterByName('utm_medium')
+       var utmCampaign = getParameterByName('utm_campaign')
+       var refCode = (utmCampaign ? (utmCampaign + " - ") : "") + (utmSource ? utmSource : "") + (utmMedium ? (" / " + utmMedium) : "") + (tag ? " -> " + tag : "")
+       return refCode
+     }
+  </script>
   <script>
     // Set up site configuration
     window.config = window.config || {};
@@ -28,13 +52,23 @@
     // Empty default Gravity Forms spinner function
     // var gformInitSpinner = function() {};
   </script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6R25NW');</script>
+<!-- End Google Tag Manager -->
 
   <?php include( get_stylesheet_directory() . '/functions/site/theme-meta.php' ); ?>
 
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6R25NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header class="layout-header <?php echo $has_backdrop; ?>">
 
     <div class="header-logo">

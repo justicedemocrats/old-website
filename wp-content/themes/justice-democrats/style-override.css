@@ -33,15 +33,15 @@ input[type="submit"]:hover,
     color: #000; }
 
 strong {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 /* Make home page banner image transparent */
 
 .block-intro__backdrop {
-	background: #111; }
+    background: #111; }
 .block-intro__backdrop img {
-	opacity: .85; }
+    opacity: .85; }
 
 
 /* Site width and home page gutter */
@@ -63,7 +63,7 @@ strong {
     margin: 10px 0 4rem; }
 .block-landing__post-preview .button.button-padded {
     margin: 0 .5rem 1rem 0;
-	text-align: center; }
+    text-align: center; }
 @media (max-width: 480px) {
     .block-landing__post-preview .button.button-padded {
         display: table;
@@ -71,16 +71,16 @@ strong {
 }
 
 /* Make home page tagline bigger */
-@media (min-width: 48em)
-.block-intro__heading {
-    font-size: 4.2rem;
+@media (min-width: 48em) {
+    .block-intro__heading {
+        font-size: 4.2rem;
+    }
 }
-
 
 /* Darken home page form background */
 
 .block-intro__form {
-	background: rgba(190, 190, 190, 0.8);
+    background: rgba(190, 190, 190, 0.8);
 }
 /* Facebook feed styling */
 .block-landing__post-preview #cff .cff-header {

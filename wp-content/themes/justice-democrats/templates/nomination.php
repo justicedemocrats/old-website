@@ -20,17 +20,18 @@
   <section class="container-gr">
     <div class="row">
       <div class="col-xs-12 col-lg-auto">
-        <h1 class="page__title"><?php echo get_the_title(); ?></h1>
-
-        <div class="page__content wysiwyg">
-          <?php the_content(); ?>
-        </div>
-
+        <h1 class="page__title"><?php echo get_the_title(); ?></h1>        
         <?php
         if($_GET['thanks'] == 1):
-          echo '<h2>Thank you for your nomination! We\'ll be in touch.</h2>';
+	?>
+          <h2>Thank you for your nomination! We'll be in touch. </h2>
+	  <a class="button submit_another" href="/nominate">Submit Another</a>
+	<?php
         else:
           ?>
+	<div class="page__content wysiwyg">
+          <?php the_content(); ?>
+        </div>
           <form class="" action="https://api.justicedemocrats.com/nominations" method="post">
             <input type="hidden" name="redirect" value="https://justicedemocrats.com/nominate?thanks=1">
             <div class="row">
@@ -128,6 +129,19 @@
                 </fieldset>
               </div>
               <div class="col-xs-12 col-md-6">
+		<fieldset>
+                  <h2 class="legend">Why This Nominee?</h2>
+                  <div class="field">
+                    <label for="nom-speaking" class="required">Why would this person make a good candidate in your district?</label>
+                    <textarea id="nom-speaking" name="nomineeProfile" required></textarea>
+                    <span class="field-help">Tell us about their background, why they represent your district well, their service and leadership work, career, public speaking abilities, political views, and anything else you think we should know.</span>
+                  </div>
+                  <div class="field">
+                    <label for="nom-nominee-twitter">Links about your candidate.</label>
+                    <input type="text" name="nomineeLinks" value="" id="nom-nominee-twitter">
+                    <span class="field-help">Include personal homepage, YouTube videos of them, etc.</span>
+                  </div>
+                </fieldset>
                 <fieldset>
                   <h2 class="legend">Nominee's Contact</h2>
                   
@@ -154,22 +168,7 @@
                     <input type="text" name="nomineeTwitter" value="" id="nom-nominee-twitter">
                     <span class="field-help">e.g. twitter.com/justicedemocrats</span>
                   </div>
-                </fieldset>
-                <fieldset>
-                  <h2 class="legend">Why This Nominee?</h2>
-                  
-
-                  <div class="field">
-                    <label for="nom-speaking" class="required">Why would this person make a good candidate in your district?</label>
-                    <textarea id="nom-speaking" name="nomineeProfile" required></textarea>
-                    <span class="field-help">Tell us about their background, why they represent your district well, their service and leadership work, background, public speaking abilities, political views, and anything else you think we should know.</span>
-                  </div>
-                  <div class="field">
-                    <label for="nom-nominee-twitter">Links about your candidate.</label>
-                    <input type="text" name="nomineeLinks" value="" id="nom-nominee-twitter">
-                    <span class="field-help">Include personal homepage, Youtube videos of them</span>
-                  </div>
-                </fieldset>
+                </fieldset>                
               </div>
             </div>
             <div class="row center-xs nomination-submit">
