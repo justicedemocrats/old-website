@@ -51,7 +51,7 @@
       a.href=url;
       return a.hostname;
     }
-    function setActBlueReferralCode() {
+    function setUTMCodes() {
       var utmSource = getParameterByName('utm_source') || parseURL(document.referrer)
       var utmMedium = getParameterByName('utm_medium')
       var utmCampaign = getParameterByName('utm_campaign')

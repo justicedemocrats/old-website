@@ -45,6 +45,6 @@
   <script id="dsq-count-scr" src="//justice-democrats.disqus.com/count.js" async></script>
 
   <?php wp_footer(); ?>
-  <script>setActBlueReferralCode()</script>
+  <script>setUTMCodes()</script>
 </body>
 </html>
