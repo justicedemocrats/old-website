@@ -10,7 +10,6 @@
   <meta property="og:image" content="http://justicedemocrats.com/wp-content/uploads/2017/01/JDshareLogo.png" />
   <meta property="og:url" content="https://justicedemocrats.com" />
   <meta property="og:title" content="Justice Democrats" />
-  <meta property="og:type" content="website" />
   <meta property="og:description" content="Democrats that represent people, not corporations. Help us recruit and run hundreds of candidates in a unified campaign to replace every establishment Congressperson in 2018." />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
