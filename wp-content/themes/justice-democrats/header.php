@@ -55,8 +55,11 @@
       var utmMedium = getParameterByName('utm_medium')
       var utmCampaign = getParameterByName('utm_campaign')
       var refCode = (utmCampaign ? (utmCampaign + "/") : "") + (utmSource ? utmSource : "") + (utmMedium ? ("/" + utmMedium) : "")
-      var signupRedirect = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/jdsignup"]')
-      document.getElementsByName('redirect')[0].value = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
+      var signupRedirects = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/jdsignup"]')
+      for (var index = 0; index < signupRedirects.length; index++) {
+        var signupRedirect = signupRedirects[index]
+        signupRedirect.href = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
+      
       if (utmCampaign) {
         var campaignInputs = document.getElementsByName('utmCampaign');
         for (index = 0; index < campaignInputs.length; index++) {
@@ -78,7 +81,7 @@
       var donateButtons = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/justicedemocrats"]')
       for (var index = 0; index < donateButtons.length; index++) {
        var donateButton = donateButtons[index]
-       donateButton.setAttribute('href', 'https://secure.actblue.com/contribute/page/justicedemocrats?refcode=' + refCode)
+       donateButton.href = 'https://secure.actblue.com/contribute/page/justicedemocrats?refcode=' + refCode
       }
     }
   </script>
