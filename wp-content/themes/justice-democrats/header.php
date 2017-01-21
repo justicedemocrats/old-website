@@ -42,6 +42,7 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
     function trackSignup() {
+      console.log('TRACKING SIGNUP')
       ga('send', 'event', 'SignupButton', 'click')
       return true;
     }
