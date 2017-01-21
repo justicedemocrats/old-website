@@ -33,7 +33,7 @@
           <?php the_content(); ?>
         </div>
           <form class="" action="https://api.justicedemocrats.com/nominations" method="post">
-            <input type="hidden" name="source" value="justicedemocrats">
+            <input type="hidden" name="source" value="Justice Democrats Website">
             <input type="hidden" name="utmSource">
             <input type="hidden" name="utmMedium">
             <input type="hidden" name="utmCampaign">
