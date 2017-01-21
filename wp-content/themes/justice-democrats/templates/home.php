@@ -29,7 +29,7 @@
             </div>
           <?php endif; ?>
             <div class="col-xs-12 col-md-6" id="home-signup">
-              <form class="block-intro__form" action="http://localhost:8080/people" method="post" onsubmit="return trackSignup();">
+              <form class="block-intro__form" action="https://api.justicedemocrats.com/people" method="post" onsubmit="return trackSignup();">
                 <p class="block-intro__form-description">
                   <?php echo nl2br($intro_newsletter); ?>
                 </p>
