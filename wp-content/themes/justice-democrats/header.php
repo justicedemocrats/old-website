@@ -20,6 +20,16 @@
 
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anonymous+Pro|Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90682108-2', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['actblue.com'] );
+  ga('send', 'pageview');
+  </script>
+  <script>
     function getParameterByName(name, url) {
       if (!url) {
         url = window.location.href;
@@ -30,19 +40,43 @@
       if (!results) return null;
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
-     }
-     function parseURL(url) {
-       var a=document.createElement('a');
-       a.href=url;
-       return a.hostname;
-     }
-     function actBlueReferralCode(tag) {
-       var utmSource = getParameterByName('utm_source') || parseURL(document.referrer)
-       var utmMedium = getParameterByName('utm_medium')
-       var utmCampaign = getParameterByName('utm_campaign')
-       var refCode = (utmCampaign ? (utmCampaign + " - ") : "") + (utmSource ? utmSource : "") + (utmMedium ? (" / " + utmMedium) : "") + (tag ? " -> " + tag : "")
-       return refCode
-     }
+    }
+    function parseURL(url) {
+      var a=document.createElement('a');
+      a.href=url;
+      return a.hostname;
+    }
+    function setActBlueReferralCode() {
+      var utmSource = getParameterByName('utm_source') || parseURL(document.referrer)
+      var utmMedium = getParameterByName('utm_medium')
+      var utmCampaign = getParameterByName('utm_campaign')
+      var refCode = (utmCampaign ? (utmCampaign + "/") : "") + (utmSource ? utmSource : "") + (utmMedium ? ("/" + utmMedium) : "")
+      var signupRedirect = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/jdsignup"]')
+      document.getElementsByName('redirect')[0].value = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
+      if (utmCampaign) {
+        var campaignInputs = document.getElementsByName('utmCampaign');
+        for (index = 0; index < campaignInputs.length; index++) {
+          campaignInputs[index].value = utmCampaign
+        }
+      }
+      if (utmSource) {
+        var sourceInputs = document.getElementsByName('utmSource');
+        for (index = 0; index < sourceInputs.length; index++) {
+          sourceInputs[index].value = utmSource
+        }
+      }
+      if (utmMedium) {
+        var mediumInputs = document.getElementsByName('utmMedium');
+        for (index = 0; index < mediumInputs.length; index++) {
+          mediumInputs[index].setAttribute('value', utmMedium)
+        }
+      }
+      var donateButtons = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/justicedemocrats"]')
+      for (var index = 0; index < donateButtons.length; index++) {
+       var donateButton = donateButtons[index]
+       donateButton.setAttribute('href', 'https://secure.actblue.com/contribute/page/justicedemocrats?refcode=' + refCode)
+      }
+    }
   </script>
   <script>
     // Set up site configuration
@@ -52,23 +86,12 @@
     // Empty default Gravity Forms spinner function
     // var gformInitSpinner = function() {};
   </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M6R25NW');</script>
-<!-- End Google Tag Manager -->
 
   <?php include( get_stylesheet_directory() . '/functions/site/theme-meta.php' ); ?>
 
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6R25NW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   <header class="layout-header <?php echo $has_backdrop; ?>">
 
     <div class="header-logo">

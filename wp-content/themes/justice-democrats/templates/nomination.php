@@ -33,6 +33,10 @@
           <?php the_content(); ?>
         </div>
           <form class="" action="https://api.justicedemocrats.com/nominations" method="post">
+            <input type="hidden" name="source" value="justicedemocrats">
+            <input type="hidden" name="utmSource">
+            <input type="hidden" name="utmMedium">
+            <input type="hidden" name="utmCampaign">
             <input type="hidden" name="redirect" value="https://justicedemocrats.com/nominate?thanks=1">
             <div class="row">
               <div class="col-xs-12 col-md-6">
