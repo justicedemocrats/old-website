@@ -133,7 +133,7 @@
                 </fieldset>
               </div>
               <div class="col-xs-12 col-md-6">
-		<fieldset>
+            		<fieldset>
                   <h2 class="legend">Why This Nominee?</h2>
                   <div class="field">
                     <label for="nom-speaking" class="required">Why would this person make a good candidate in your district?</label>
