@@ -89,7 +89,18 @@ select[multiple] {
 
 // Styles relevant to checkboxes
 input[type="checkbox"] {
-  vertical-align: bottom;
+  color: #ddd;
+  border-color: #ddd;
+  display: inline-block;
+  width: auto;
+  vertical-align: text-bottom;
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: sub;
 }
 
 // Styles relevant to radio buttons

@@ -59,7 +59,7 @@
       for (var index = 0; index < signupRedirects.length; index++) {
         var signupRedirect = signupRedirects[index]
         signupRedirect.href = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
-      
+      }
       if (utmCampaign) {
         var campaignInputs = document.getElementsByName('utmCampaign');
         for (index = 0; index < campaignInputs.length; index++) {
@@ -75,7 +75,7 @@
       if (utmMedium) {
         var mediumInputs = document.getElementsByName('utmMedium');
         for (index = 0; index < mediumInputs.length; index++) {
-          mediumInputs[index].setAttribute('value', utmMedium)
+          mediumInputs[index].value = utmMedium
         }
       }
       var donateButtons = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/justicedemocrats"]')
