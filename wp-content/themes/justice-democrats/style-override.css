@@ -58,11 +58,11 @@ strong {
 .block-landing__post-video,
 .block-landing__post-preview p:first-child {
     margin: 10px 0 4rem; }
-.block-landing__post-preview .button.button-padded {
+.block-landing__post-preview .button {
     margin: 0 .5rem 1rem 0;
     text-align: center; }
 @media (max-width: 480px) {
-    .block-landing__post-preview .button.button-padded {
+    .block-landing__post-preview .button {
         display: table;
         margin: 0 auto 1rem; }
 }
