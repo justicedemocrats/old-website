@@ -55,10 +55,10 @@
       var utmMedium = getParameterByName('utm_medium')
       var utmCampaign = getParameterByName('utm_campaign')
       var refCode = (utmCampaign ? (utmCampaign + "/") : "") + (utmSource ? utmSource : "") + (utmMedium ? ("/" + utmMedium) : "")
-      var signupRedirects = document.querySelectorAll('[href="https://secure.actblue.com/contribute/page/jdsignup"]')
+      var signupRedirects = document.querySelectorAll('[value="https://secure.actblue.com/contribute/page/jdsignup"]')
       for (var index = 0; index < signupRedirects.length; index++) {
         var signupRedirect = signupRedirects[index]
-        signupRedirect.href = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
+        signupRedirect.value = 'https://secure.actblue.com/contribute/page/jdsignup?refcode=' + refCode
       }
       if (utmCampaign) {
         var campaignInputs = document.getElementsByName('utmCampaign');
