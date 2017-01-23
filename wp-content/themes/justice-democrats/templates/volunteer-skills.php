@@ -54,6 +54,10 @@
                     <input type="tel" name="volunteerPhone" value="" id="vol-phone" required>
                   </div>
                   <div class="field">
+                    <label for="vol-address" class="required">Your Address</label>
+                    <textarea id="volunteer-address" name="volunteerAddress" required></textarea>
+                  </div>
+                  <div class="field">
                     <label for="vol-city" class="required">Your City</label>
                     <input type="text" name="volunteerCity" value="" id="vol-city" required>
                   </div>
@@ -121,21 +125,12 @@
                     <input type="text" name="volunteerZip" value="" id="vol-zip" required>
                   </div>
                   <div class="field">
-                    <label for="volunteer-district" class="required">Your Congressional District</label>
-                    <input type="text" name="volunteerDistrict" value="" id="volunteer-district">
-                    <span class="field-help">a number or "AL" for at-large. <a href="http://www.house.gov/representatives/find/">Look up your district.</a></span>
-                  </div>
-                  <div class="field">
                     <label for="volunteer-facebook">Your Facebook</label>
                     <input type="text" name="volunteerFacebook" value="" id="volunteer-facebook">
                   </div>
                   <div class="field">
                     <label for="volunteer-twitter">Your Twitter</label>
                     <input type="text" name="volunteerTwitter" value="" id="volunteer-twitter">
-                  </div>
-                  <div class="field">
-                    <label for="volunteer-linkedin">Your LinkedIn</label>
-                    <input type="text" name="volunteerLinkedIn" value="" id="volunteer-linkedin">
                   </div>
                 </fieldset>
               </div>
