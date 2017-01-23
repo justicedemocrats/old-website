@@ -41,7 +41,7 @@
                   <input type="hidden" name="utmCampaign">
                   <input type="text" name="fullName" value="" placeholder="Name" required>
                   <input type="email" name="email" value="" placeholder="Email" required>
-                  <input type="tel" name="phone" value="" placeholder="Mobile Phone">
+                  <input type="tel" name="phone" value="" placeholder="Phone">
                   <input type="num" name="zip" value="" pattern="[0-9]{1,5}" title="Zip code must contain digits only." placeholder="Zip" required>
                   <button type="submit" name="" class="button button--large button--full">Sign me up</button>
                 </div>
