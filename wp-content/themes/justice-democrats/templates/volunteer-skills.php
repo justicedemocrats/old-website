@@ -159,9 +159,9 @@
                      <input type="checkbox" id="volunteer-hr" name="volunteerType" value=volunteer-hr""> <label for="volunteer-hr">Operations and HR</label><br />
                      <input type="checkbox" id="volunteer-legal" name="volunteerType" value=volunteer-legal""> <label for="volunteer-legal">Legal</label><br />
                      <input type="checkbox" id="volunteer-manage-communities" name="volunteerType" value=volunteer-manage-communities""> <label for="volunteer-manage-communities">Manage online communities</label><br />
-                     <input type="checkbox" id="volunteer-supporter-housing" name="volunteerType" value=volunteer-supporter-housing""> <label for="volunteer-supporter-housing"><strong>Can house supporters</strong></label><br />
-                     <input type="checkbox" id="volunteer-event-host" name="volunteerType" value=volunteer-event-host""> <label for="volunteer-event-host"><strong>Can host events</strong></label><br />
-                     <input type="checkbox" id="volunteer-venue" name="volunteerType" value=volunteer-venue""> <label for="volunteer-venue"><strong>Have access to free or low-cost venues</strong></label><br />
+                     <input type="checkbox" id="volunteer-supporter-housing" name="volunteerType" value=volunteer-supporter-housing""> <label for="volunteer-supporter-housing">Can house supporters</label><br />
+                     <input type="checkbox" id="volunteer-event-host" name="volunteerType" value=volunteer-event-host""> <label for="volunteer-event-host">Can host events</label><br />
+                     <input type="checkbox" id="volunteer-venue" name="volunteerType" value=volunteer-venue""> <label for="volunteer-venue">Have access to free or low-cost venues</label><br />
                   </div>
                 </fieldset>
                 <fieldset>
