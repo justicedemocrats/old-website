@@ -111,11 +111,13 @@
                 <div class="block-landing__post">
                   <div class="row middle-xs between-xs">                   
                     <div class="col-sm-reset">
-                      <div class="button">Act Now</div>
+                      <div class="body-label">Act Now</div>
                     </div>
                   </div>
                   <div class="block-landing__post-preview wysiwyg">
-                    <?php the_sub_field('content'); ?>
+                    <div class="act-now">
+                      <?php the_sub_field('content'); ?>
+                    </div>
                   </div>                  
                 </div>
 

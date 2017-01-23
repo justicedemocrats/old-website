@@ -15,9 +15,6 @@ input[type="submit"]:hover,
 #home-signup .button:hover {
     color: #FFF;
     background: #111; }
-.button.button-padded {
-    padding: 1.3rem 46px;
-    font-size: 1.6rem; }
 .menu-main a {
     border-bottom: 3px solid transparent;
     color: #FFF; }
