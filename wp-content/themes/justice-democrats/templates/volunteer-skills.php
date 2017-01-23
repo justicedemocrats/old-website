@@ -125,12 +125,8 @@
                     <input type="text" name="volunteerZip" value="" id="vol-zip" required>
                   </div>
                   <div class="field">
-                    <label for="volunteer-facebook">Your Facebook</label>
-                    <input type="text" name="volunteerFacebook" value="" id="volunteer-facebook">
-                  </div>
-                  <div class="field">
-                    <label for="volunteer-twitter">Your Twitter</label>
-                    <input type="text" name="volunteerTwitter" value="" id="volunteer-twitter">
+                    <label for="volunteer-linkedin">Your LinkedIn</label>
+                    <input type="text" name="volunteerLinkedIn" value="" id="volunteer-linkedin">
                   </div>
                 </fieldset>
               </div>
