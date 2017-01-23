@@ -109,32 +109,14 @@
                 ?>
 
                 <div class="block-landing__post">
+                  <div class="row middle-xs between-xs">                   
+                    <div class="col-sm-reset">
+                      <div class="button">Act Now</div>
+                    </div>
+                  </div>
                   <div class="block-landing__post-preview wysiwyg">
                     <?php the_sub_field('content'); ?>
-                  </div>
-
-                  <div class="row middle-xs between-xs">
-                    <?php
-                    $post_link = get_sub_field('learn_more_link');
-                    if (!empty($post_link)):
-                      ?>
-                      <div class="col-sm-reset">
-                        <a href="<?php echo $post_link; ?>" class="button">Learn More</a>
-                      </div>
-                      <?php
-                    endif;
-                    
-                    $post_date = get_sub_field('date');
-                    if (!empty($post_date)):
-                      ?>
-                      <div class="col-sm-reset">
-                        <time class="block-landing__post-time"><?php echo $post_date; ?></time>
-                      </div>
-                      <?php
-                    endif;
-                    ?>
-                  </div>
-
+                  </div>                  
                 </div>
 
                 <?php
