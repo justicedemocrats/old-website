@@ -143,25 +143,25 @@
                 <fieldset>
                   <h2 class="legend">How can you help?</h2>
                   <div class="field">
-                    <input type="checkbox" id="volunteer-programming" name="volunteerType" value=volunteer-programming""> <label for="volunteer-programming">Web development</label><br />
-                     <input type="checkbox" id="volunteer-web-design" name="volunteerType" value=volunteer-web-design""> <label for="volunteer-web-design">Web design</label><br />
-                     <input type="checkbox" id="volunteer-graphic-design" name="volunteerType" value=volunteer-graphic-design""> <label for="volunteer-graphic-design">Graphic design</label><br />
-                     <input type="checkbox" id="volunteer-video" name="volunteerType" value=volunteer-video""> <label for="volunteer-video">Video production</label><br />
-                     <input type="checkbox" id="volunteer-writing" name="volunteerType" value=volunteer-writing""> <label for="volunteer-writing">Writing/marketing</label><br />
-                     <input type="checkbox" id="volunteer-press" name="volunteerType" value=volunteer-press""> <label for="volunteer-press">Provide press connections</label><br />
-                     <input type="checkbox" id="volunteer-nationbuilder" name="volunteerType" value=volunteer-nationbuilder""> <label for="volunteer-nationbuilder">Nationbuilder administration</label><br />
-                     <input type="checkbox" id="volunteer-data-entry" name="volunteerType" value=volunteer-data-entry""> <label for="volunteer-data-entry">Data entry</label><br />
-                     <input type="checkbox" id="volunteer-call" name="volunteerType" value=volunteer-call""> <label for="volunteer-call">Call supporters</label><br />
-                     <input type="checkbox" id="volunteer-helpdesk" name="volunteerType" value=volunteer-helpdesk""> <label for="volunteer-helpdesk">Answer helpdesk emails</label><br />
-                     <input type="checkbox" id="volunteer-sharing" name="volunteerType" value=volunteer-sharing""> <label for="volunteer-sharing">Share social media posts</label><br />
-                     <input type="checkbox" id="volunteer-printing" name="volunteerType" value=volunteer-printing""> <label for="volunteer-printing">Provide printing services</label><br />
-                     <input type="checkbox" id="volunteer-travel" name="volunteerType" value=volunteer-travel""> <label for="volunteer-travel">Manage and book travel</label><br />
-                     <input type="checkbox" id="volunteer-hr" name="volunteerType" value=volunteer-hr""> <label for="volunteer-hr">Operations and HR</label><br />
-                     <input type="checkbox" id="volunteer-legal" name="volunteerType" value=volunteer-legal""> <label for="volunteer-legal">Legal</label><br />
-                     <input type="checkbox" id="volunteer-manage-communities" name="volunteerType" value=volunteer-manage-communities""> <label for="volunteer-manage-communities">Manage online communities</label><br />
-                     <input type="checkbox" id="volunteer-supporter-housing" name="volunteerType" value=volunteer-supporter-housing""> <label for="volunteer-supporter-housing">Can house supporters</label><br />
-                     <input type="checkbox" id="volunteer-event-host" name="volunteerType" value=volunteer-event-host""> <label for="volunteer-event-host">Can host events</label><br />
-                     <input type="checkbox" id="volunteer-venue" name="volunteerType" value=volunteer-venue""> <label for="volunteer-venue">Have access to free or low-cost venues</label><br />
+                    <input type="checkbox" id="skill-programming" name="volunteerSkills" value=skill-programming"> <label for="skill-programming">Web development</label><br />
+                     <input type="checkbox" id="skill-web-design" name="volunteerSkills" value=skill-web-design"> <label for="skill-web-design">Web design</label><br />
+                     <input type="checkbox" id="skill-graphic-design" name="volunteerSkills" value=skill-graphic-design"> <label for="skill-graphic-design">Graphic design</label><br />
+                     <input type="checkbox" id="skill-video" name="volunteerSkills" value=skill-video"> <label for="skill-video">Video production</label><br />
+                     <input type="checkbox" id="skill-writing" name="volunteerSkills" value=skill-writing"> <label for="skill-writing">Writing/marketing</label><br />
+                     <input type="checkbox" id="skill-press" name="volunteerSkills" value=skill-press"> <label for="skill-press">Provide press connections</label><br />
+                     <input type="checkbox" id="skill-nationbuilder" name="volunteerSkills" value=skill-nationbuilder"> <label for="skill-nationbuilder">Nationbuilder administration</label><br />
+                     <input type="checkbox" id="skill-data-entry" name="volunteerSkills" value=skill-data-entry"> <label for="skill-data-entry">Data entry</label><br />
+                     <input type="checkbox" id="skill-call" name="volunteerSkills" value=skill-calling"> <label for="skill-call">Call supporters</label><br />
+                     <input type="checkbox" id="skill-helpdesk" name="volunteerSkills" value=skill-helpdesk"> <label for="skill-helpdesk">Answer helpdesk emails</label><br />
+                     <input type="checkbox" id="skill-sharing" name="volunteerSkills" value=skill-sm-sharing"> <label for="skill-sharing">Share social media posts</label><br />
+                     <input type="checkbox" id="skill-printing" name="volunteerSkills" value=skill-printing"> <label for="skill-printing">Provide printing services</label><br />
+                     <input type="checkbox" id="skill-travel" name="volunteerSkills" value=skill-travel"> <label for="skill-travel">Manage and book travel</label><br />
+                     <input type="checkbox" id="skill-hr" name="volunteerSkills" value=skill-hr"> <label for="skill-hr">Operations and HR</label><br />
+                     <input type="checkbox" id="skill-legal" name="volunteerSkills" value=skill-legal"> <label for="skill-legal">Legal</label><br />
+                     <input type="checkbox" id="skill-manage-communities" name="volunteerSkills" value=skill-manage-communities"> <label for="skill-manage-communities">Manage online communities</label><br />
+                     <input type="checkbox" id="skill-supporter-housing" name="volunteerSkills" value=skill-supporter-housing"> <label for="skill-supporter-housing">Can house supporters</label><br />
+                     <input type="checkbox" id="skill-event-host" name="volunteerSkills" value=skill-event-host"> <label for="skill-event-host">Can host events</label><br />
+                     <input type="checkbox" id="skill-venue" name="volunteerSkills" value=skill-venue-access"> <label for="volunteer-venue">Have access to free or low-cost venues</label><br />
                   </div>
                 </fieldset>
                 <fieldset>
