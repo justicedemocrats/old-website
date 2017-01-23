@@ -128,7 +128,7 @@
                   <div class="field">
                     <label for="nom-nominee-district">Nominee's Congressional District</label>
                     <input type="text" name="nomineeDistrict" value="" id="nom-nominee-district">
-                    <span class="field-help">a number or "AL" for at-large</span>
+                    <span class="field-help">a number or "AL" for at-large. <a href="http://www.house.gov/representatives/find/">Look up their district.</a></span>
                   </div>
                 </fieldset>
               </div>

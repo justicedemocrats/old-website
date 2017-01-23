@@ -123,7 +123,7 @@
                   <div class="field">
                     <label for="volunteer-district" class="required">Your Congressional District</label>
                     <input type="text" name="volunteerDistrict" value="" id="volunteer-district">
-                    <span class="field-help">a number or "AL" for at-large. <a href="http://www.house.gov/representatives/find/">Look up your district</a></span>
+                    <span class="field-help">a number or "AL" for at-large. <a href="http://www.house.gov/representatives/find/">Look up your district.</a></span>
                   </div>
                   <div class="field">
                     <label for="volunteer-facebook">Your Facebook</label>
@@ -158,7 +158,9 @@
                      <input type="checkbox" id="volunteer-travel" name="volunteerType" value=volunteer-travel""> <label for="volunteer-travel">Manage and book travel</label><br />
                      <input type="checkbox" id="volunteer-hr" name="volunteerType" value=volunteer-hr""> <label for="volunteer-hr">Operations and HR</label><br />
                      <input type="checkbox" id="volunteer-legal" name="volunteerType" value=volunteer-legal""> <label for="volunteer-legal">Legal</label><br />
-                     <input type="checkbox" id="volunteer-manage-communities" name="volunteerType" value=volunteer-manage-communities""> <label for="volunteer-manage-communities">Manage online communities</label><br />  
+                     <input type="checkbox" id="volunteer-manage-communities" name="volunteerType" value=volunteer-manage-communities""> <label for="volunteer-manage-communities">Manage online communities</label><br />
+                     <input type="checkbox" id="volunteer-supporter-housing" name="volunteerType" value=volunteer-supporter-housing""> <label for="volunteer-supporter-housing"><strong>Can house supporters</strong></label><br />
+                     <input type="checkbox" id="volunteer-event-host" name="volunteerType" value=volunteer-event-host""> <label for="volunteer-event-host"><strong>Can host events</strong></label><br />
                      <input type="checkbox" id="volunteer-venue" name="volunteerType" value=volunteer-venue""> <label for="volunteer-venue"><strong>Have access to free or low-cost venues</strong></label><br />
                   </div>
                 </fieldset>
