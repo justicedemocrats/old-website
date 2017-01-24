@@ -158,7 +158,7 @@
                 <fieldset>
                   <h2 class="legend">Anything else we should know about you?</h2>
                   <div class="field">
-                    <textarea id="volunteer-info" name="volunteerProfile" required></textarea>
+                    <textarea id="volunteer-info" name="volunteerProfile"></textarea>
                     <span class="field-help">Tell us about your work experience or anything else you think you could provide that would help.</span>
                   </div>
                 </fieldset>
