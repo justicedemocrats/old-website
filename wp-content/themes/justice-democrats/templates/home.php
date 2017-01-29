@@ -39,7 +39,7 @@
                   <input type="hidden" name="utmSource">
                   <input type="hidden" name="utmMedium">
                   <input type="hidden" name="utmCampaign">
-                  <input type="email" name="email" value="" placeholder="Email" required>
+                  <input type="email" name="email" value="" placeholder="Email" pattern='(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)' title="Must enter a valid e-mail address" required>
                   <input type="num" name="zip" value=""placeholder="Zip" required>
                   <button type="submit" name="" class="button button--large button--full">Sign me up</button>
                 </div>
