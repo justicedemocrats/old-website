@@ -14,9 +14,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Democrats that represent people, not corporations. Help us recruit and run hundreds of candidates in a unified campaign to replace every establishment Congressperson in 2018."
+  <meta name="description" content="Democrats that represent people, not corporations. Help us recruit and run hundreds of candidates in a unified campaign to replace every establishment Congressperson in 2018.">
 
-  <title><?php bloginfo('name'); ?> &raquo; <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+  <title><?php wp_title(''); ?></title>
 
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anonymous+Pro|Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
   <script>
