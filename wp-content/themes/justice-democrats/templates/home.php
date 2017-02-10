@@ -3,7 +3,7 @@
   Template Name: Home
   */
 
-  get_header("abtesting");
+  get_header();
 
   // get post ID
   $pid = get_the_ID();
