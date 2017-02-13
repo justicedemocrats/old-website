@@ -181,6 +181,64 @@
     </div>
   </section>
 
+  <section class="comp-content">
+    <div class="container-gr">
+      <header class="comp-picture-header" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/assets/images/header/american-flag.jpg')">
+        <h1>F.A.Q.</h1>
+      </header>
+      <div class="row between-sm">
+        <div class="col-xs-12 col-md-3">
+          <h3 class="aside-heading">Quick Links</h3>
+          <p class="aside-heading-sub">About Justice Democrats</p>
+          <ul class="aside-list">
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></li>
+            <li><a href="#">Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor Ut nec nisl est?</a></li>
+            <li><a href="#">Fusce ipsum lacus, vehicula porta ex eget?</a></li>
+            <li><a href="#">Ornare dapibus nibh nibh ut est?</a></li>
+          </ul>
+          <p class="aside-heading-sub">About The Candidates</p>
+          <ul class="aside-list">
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></li>
+            <li><a href="#">Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor Ut nec nisl est?</a></li>
+            <li><a href="#">Fusce ipsum lacus, vehicula porta ex eget?</a></li>
+            <li><a href="#">Ornare dapibus nibh nibh ut est?</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <h2 class="content-heading">About Justice Democrats</h2>
+          <dl class="comp-faq">
+            <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>
+            <dd>Donec efficitur ipsum non bibendum lacinia. Vivamus dignissim diam sed dolor vulputate ultrices. Suspendisse id massa vitae lectus viverra efficitur id nec orci. Morbi volutpat aliquet sapien eget pharetra. Etiam nec viverra nunc, eget tincidunt dui. Suspendisse sapien orci, hendrerit a lorem eu, dictum vulputate purus. Proin condimentum purus nec lorem hendrerit, eu scelerisque purus sollicitudin. </dd>
+
+            <dt>Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor Ut nec nisl est?</dt>
+            <dd>Suspendisse sapien orci, hendrerit a lorem eu, dictum vulputate purus. Proin condimentum purus nec lorem hendrerit, eu scelerisque purus sollicitudin. Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor. Ut nec nisl est. Duis porttitor dolor et cursus tincidunt. Praesent tempor lacus semper, finibus urna ac, mollis orci. Etiam maximus, tortor ac viverra iaculis, nulla eros facilisis lectus, vel tempus quam nunc ornare diam. Morbi congue risus eu nulla interdum, ut bibendum libero venenatis. Suspendisse ut erat quis tellus viverra rutrum.</dd>
+
+            <dt>Fusce ipsum lacus, vehicula porta ex eget?</dt>
+            <dd>Aenean in malesuada erat, vel iaculis magna. Suspendisse auctor ligula et sem porttitor, in gravida nisl vestibulum. Integer ac sollicitudin augue. Proin pulvinar ligula et gravida pharetra. </dd>
+            
+            <dt>Ornare dapibus nibh nibh ut est?</dt>
+            <dd>Phasellus elit dui, sagittis dictum turpis ac, luctus pulvinar odio. Maecenas congue maximus mauris at congue. Nunc eget rutrum mauris. Pellentesque vestibulum nisi pretium lorem pretium lacinia. Curabitur blandit tellus neque, non vehicula velit cursus a. Maecenas tellus lacus, tincidunt a leo vel, commodo facilisis elit. Nam id sapien sed lacus blandit mollis sit amet a tellus. Curabitur volutpat egestas lorem, facilisis sodales neque ullamcorper ac. Etiam faucibus tortor et eros tristique, id dictum nibh tincidunt.</dd>
+          </dl>
+
+          <h2 class="content-heading">About The Candidates</h2>
+          <dl class="comp-faq">
+            <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>
+            <dd>Donec efficitur ipsum non bibendum lacinia. Vivamus dignissim diam sed dolor vulputate ultrices. Suspendisse id massa vitae lectus viverra efficitur id nec orci. Morbi volutpat aliquet sapien eget pharetra. Etiam nec viverra nunc, eget tincidunt dui. Suspendisse sapien orci, hendrerit a lorem eu, dictum vulputate purus. Proin condimentum purus nec lorem hendrerit, eu scelerisque purus sollicitudin. </dd>
+
+            <dt>Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor Ut nec nisl est?</dt>
+            <dd>Suspendisse sapien orci, hendrerit a lorem eu, dictum vulputate purus. Proin condimentum purus nec lorem hendrerit, eu scelerisque purus sollicitudin. Nam ac lectus nibh. Maecenas a mollis neque, ut ornare tortor. Ut nec nisl est. Duis porttitor dolor et cursus tincidunt. Praesent tempor lacus semper, finibus urna ac, mollis orci. Etiam maximus, tortor ac viverra iaculis, nulla eros facilisis lectus, vel tempus quam nunc ornare diam. Morbi congue risus eu nulla interdum, ut bibendum libero venenatis. Suspendisse ut erat quis tellus viverra rutrum.</dd>
+
+            <dt>Fusce ipsum lacus, vehicula porta ex eget?</dt>
+            <dd>Aenean in malesuada erat, vel iaculis magna. Suspendisse auctor ligula et sem porttitor, in gravida nisl vestibulum. Integer ac sollicitudin augue. Proin pulvinar ligula et gravida pharetra. </dd>
+            
+            <dt>Ornare dapibus nibh nibh ut est?</dt>
+            <dd>Phasellus elit dui, sagittis dictum turpis ac, luctus pulvinar odio. Maecenas congue maximus mauris at congue. Nunc eget rutrum mauris. Pellentesque vestibulum nisi pretium lorem pretium lacinia. Curabitur blandit tellus neque, non vehicula velit cursus a. Maecenas tellus lacus, tincidunt a leo vel, commodo facilisis elit. Nam id sapien sed lacus blandit mollis sit amet a tellus. Curabitur volutpat egestas lorem, facilisis sodales neque ullamcorper ac. Etiam faucibus tortor et eros tristique, id dictum nibh tincidunt.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </article>
 
 <?php get_footer(); ?>

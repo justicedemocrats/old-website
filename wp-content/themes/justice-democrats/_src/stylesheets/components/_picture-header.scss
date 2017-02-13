@@ -1,0 +1,14 @@
+// ================================
+// Picture Header
+// ================================
+
+.comp-picture-header {
+  padding: rem(60px 20px);
+  margin-bottom: rem(90px);
+  background-size: cover;
+  text-align: center;
+  @include setfont(alfa);
+  font-size: rem(40px);
+  color: #fff;
+  letter-spacing: .02em;
+}

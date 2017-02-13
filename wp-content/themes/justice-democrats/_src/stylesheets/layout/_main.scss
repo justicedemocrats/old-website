@@ -59,3 +59,15 @@ main {
   border-radius: 5px;
   padding: 10px;
 }
+
+.content-heading {
+  display: block;
+  @include setfont(roboto-condensed);
+  font-weight: 700;
+  font-size: rem(26px);
+  color: #2B5058;
+  text-transform: uppercase;
+  padding-bottom: rem(25px);
+  margin-bottom: rem(50px);
+  border-bottom: rem(7px) solid #373737;
+}

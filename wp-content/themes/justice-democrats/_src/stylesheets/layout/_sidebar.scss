@@ -1,3 +1,55 @@
 // ================================
 // Sidebar
 // ================================
+
+.aside-heading {
+  @include setfont(alfa);
+  font-size: rem(18px);
+  letter-spacing: 1px;
+  padding-bottom: rem(35px);
+  margin-bottom: rem(45px);
+  border-bottom: 1px solid #979797;
+  text-transform: uppercase;
+}
+
+.aside-heading-sub {
+  @include setfont(roboto-condensed);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .83px;
+  text-transform: uppercase;
+  margin-bottom: rem(25px);
+}
+
+.aside-list {
+  list-style: none;
+  @include setfont(roboto-condensed);
+  margin-bottom: rem(40px);
+
+  li {
+    font-size: rem(15px);
+    font-weight: 700;
+    line-height: rem(20px);
+    padding-left: rem(20px);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: rem(8px);
+      left: 0;
+      display: block;
+      width: rem(4px);
+      height: rem(4px);
+      border-radius: 50%;
+      background: #222;
+    } 
+  }
+
+  li + li {
+    margin-top: rem(10px);
+  }
+
+  a {
+    color: #5B919F;
+  }
+}
