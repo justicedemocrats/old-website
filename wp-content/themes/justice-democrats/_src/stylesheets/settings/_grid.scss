@@ -4,7 +4,7 @@
 
 $enable-gridlines: false !default;
 $spacing-unit: 10px;
-$grid-columns: 12 !default;
+$grid-columns: 24 !default;
 $grid-gutter-width: 40px !default;
 
 // Rows Max-Width
@@ -19,5 +19,5 @@ $container-max-widths: (
   md: rem(768px, $rem-base-multiplyer),
   lg: rem(1024px, $rem-base-multiplyer),
   xl: rem(1220px, $rem-base-multiplyer),
-  gr: rem(1440px, $rem-base-multiplyer)
+  gr: rem(1300px, $rem-base-multiplyer)
 ) !default;

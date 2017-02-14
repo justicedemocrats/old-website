@@ -44,20 +44,17 @@ main {
   padding-bottom: rem(80px);
 }
 
-.body-label {
-  background-color: setcolor(yellow);
-  font-weight: 700;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+.heading-section {
+  @extend %heading-section;
 }
 
 .act-now {
-  border: 1px solid setcolor(blue, light);
-  border-radius: 5px;
-  padding: 10px;
+  background-color: #f4f4f4;
+  padding: rem(40px 20px);
+
+  @include media(">=md") {
+    padding: rem(40px);
+  }
 }
 
 .content-heading {

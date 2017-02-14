@@ -34,6 +34,7 @@ a:not(.button) {
 
   &:hover,
   &:focus {
+    color: #999;
     text-decoration: underline;
   }
 }

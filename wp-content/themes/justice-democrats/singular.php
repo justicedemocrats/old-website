@@ -19,7 +19,7 @@
 <article class="landing-page">
   <section class="container-gr">
     <div class="row">
-      <div class="col-xs-12 col-lg-auto">
+      <div class="col-xs-24 col-lg-auto">
         <h1 class="page__title page__title--post"><?php echo get_the_title(); ?></h1>
         <div class="page__meta">
           Posted: <time><?php echo get_the_date(); ?></time>
@@ -39,7 +39,7 @@
           <?php comments_template(); ?>
         </div>
       </div>
-      <div class="col-xs-12 col-lg-3 first-lg">
+      <div class="col-xs-24 col-lg-3 first-lg">
         <div class="page-sidebar">
           <h4 class="page-sidebar__parent">Categories</h4>
           <?php echo get_the_category_list(); ?>

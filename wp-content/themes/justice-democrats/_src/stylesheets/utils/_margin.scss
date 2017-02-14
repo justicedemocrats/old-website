@@ -1,0 +1,120 @@
+// ================================
+// Margin
+// ================================
+
+// Margin top
+.mt-auto { margin-top: auto !important; }
+.mt-0 { margin-top: 0 !important; }
+.mt-5 { margin-top: rem($spacing-unit / 2) !important; }
+.mt-10 { margin-top: rem($spacing-unit) !important; }
+.mt-20 { margin-top: rem($spacing-unit * 2) !important; }
+.mt-30 { margin-top: rem($spacing-unit * 3) !important; }
+.mt-40 { margin-top: rem($spacing-unit * 4) !important; }
+
+// Margin bottom
+.mb-auto { margin-bottom: auto !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.mb-5 { margin-bottom: rem($spacing-unit / 2) !important; }
+.mb-10 { margin-bottom: rem($spacing-unit) !important; }
+.mb-20 { margin-bottom: rem($spacing-unit * 2) !important; }
+.mb-30 { margin-bottom: rem($spacing-unit * 3) !important; }
+.mb-40 { margin-bottom: rem($spacing-unit * 4) !important; }
+
+// Margin right
+.mr-auto { margin-right: auto !important; }
+.mr-0 { margin-right: 0 !important; }
+.mr-5 { margin-right: rem($spacing-unit / 2) !important; }
+.mr-10 { margin-right: rem($spacing-unit) !important; }
+.mr-20 { margin-right: rem($spacing-unit * 2) !important; }
+.mr-30 { margin-right: rem($spacing-unit * 3) !important; }
+.mr-40 { margin-right: rem($spacing-unit * 4) !important; }
+
+// Margin left
+.ml-auto { margin-left: auto !important; }
+.ml-0 { margin-left: 0 !important; }
+.ml-5 { margin-left: rem($spacing-unit / 2) !important; }
+.ml-10 { margin-left: rem($spacing-unit) !important; }
+.ml-20 { margin-left: rem($spacing-unit * 2) !important; }
+.ml-30 { margin-left: rem($spacing-unit * 3) !important; }
+.ml-40 { margin-left: rem($spacing-unit * 4) !important; }
+
+// Margin all sides
+.ma-auto { margin: auto !important; }
+.ma-0 { margin: 0 !important; }
+.ma-5 { margin: rem($spacing-unit / 2) !important; }
+.ma-10 { margin: rem($spacing-unit) !important; }
+.ma-20 { margin: rem($spacing-unit * 2) !important; }
+.ma-30 { margin: rem($spacing-unit * 3) !important; }
+.ma-40 { margin: rem($spacing-unit * 4) !important; }
+
+// Margin left and right
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.mx-5 {
+  margin-left: rem($spacing-unit / 2) !important;
+  margin-right: rem($spacing-unit / 2) !important;
+}
+
+.mx-10 {
+  margin-left: rem($spacing-unit) !important;
+  margin-right: rem($spacing-unit) !important;
+}
+
+.mx-20 {
+  margin-left: rem($spacing-unit * 2) !important;
+  margin-right: rem($spacing-unit * 2) !important;
+}
+
+.mx-30 {
+  margin-left: rem($spacing-unit * 3) !important;
+  margin-right: rem($spacing-unit * 3) !important;
+}
+
+.mx-40 {
+  margin-left: rem($spacing-unit * 4) !important;
+  margin-right: rem($spacing-unit * 4) !important;
+}
+
+// Margin top and bottom
+.my-auto {
+  margin-bottom: auto !important;
+  margin-top: auto !important;
+}
+
+.my-0 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.my-5 {
+  margin-bottom: rem($spacing-unit / 2) !important;
+  margin-top: rem($spacing-unit / 2) !important;
+}
+
+.my-10 {
+  margin-bottom: rem($spacing-unit) !important;
+  margin-top: rem($spacing-unit) !important;
+}
+
+.my-20 {
+  margin-bottom: rem($spacing-unit * 2) !important;
+  margin-top: rem($spacing-unit * 2) !important;
+}
+
+.my-30 {
+  margin-bottom: rem($spacing-unit * 3) !important;
+  margin-top: rem($spacing-unit * 3) !important;
+}
+
+.my-40 {
+  margin-bottom: rem($spacing-unit * 4) !important;
+  margin-top: rem($spacing-unit * 4) !important;
+}

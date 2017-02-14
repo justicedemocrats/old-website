@@ -22,13 +22,13 @@
       <div class="container-gr">
         <div class="row">
           <?php if (!empty($intro_heading)): ?>
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-24 col-md-12">
               <h2 class="block-intro__heading">
                 <?php echo nl2br($intro_heading); ?>
               </h2>
             </div>
           <?php endif; ?>
-            <div class="col-xs-12 col-md-6" id="home-signup">
+            <div class="col-xs-24 col-md-12" id="home-signup">
               <form class="block-intro__form" action="https://api.justicedemocrats.com/people" method="post" onsubmit="return trackSignup();">
                 <p class="block-intro__form-description">
                   <?php echo nl2br($intro_newsletter); ?>
@@ -173,10 +173,10 @@
         ?>
 
 
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-24 col-lg-12">
           <?php echo $left_buff ?>
         </div>
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-24 col-lg-12">
           <?php echo $right_buff ?>
         </div>
       </div>

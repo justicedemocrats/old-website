@@ -20,15 +20,15 @@
     </div>
     <div class="block-intro__content">
       <div class="container-gr">
-        <div class="row">
+        <div class="row between-md">
           <?php if (!empty($intro_heading)): ?>
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-24 col-md-12">
               <h2 class="block-intro__heading">
                 <?php echo nl2br($intro_heading); ?>
               </h2>
             </div>
           <?php endif; ?>
-            <div class="col-xs-12 col-md-6" id="home-signup">
+            <div class="col-xs-24 col-md-12 col-lg-11" id="home-signup">
               <form class="block-intro__form" action="https://api.justicedemocrats.com/people" method="post" onsubmit="return trackSignup();">
                 <p class="block-intro__form-description">
                   <?php echo nl2br($intro_newsletter); ?>
@@ -41,7 +41,7 @@
                   <input type="hidden" name="utmCampaign">
                   <input type="email" name="email" value="" placeholder="Email" pattern='(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)' title="Must enter a valid e-mail address" required>
                   <input type="num" name="zip" value=""placeholder="Zip" required>
-                  <button type="submit" name="" class="button button--large button--full">Sign me up</button>
+                  <button type="submit" name="" class="button button--large button--full button--yellow">Sign me up</button>
                 </div>
               </form>
             </div>
@@ -52,7 +52,7 @@
 
   <section class="block-landing">
     <div class="container-gr">
-      <div class="row">
+      <div class="row between-lg">
         <?php
 
         // check if the flexible content field has rows of data
@@ -109,11 +109,7 @@
                 ?>
 
                 <div class="block-landing__post">
-                  <div class="row middle-xs between-xs">                   
-                    <div class="col-sm-reset">
-                      <div class="body-label">Act Now</div>
-                    </div>
-                  </div>
+                  <h2 class="heading-section">Act Now</h2>
                   <div class="block-landing__post-preview wysiwyg">
                     <div class="act-now">
                       <?php the_sub_field('content'); ?>
@@ -171,10 +167,10 @@
         ?>
 
 
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-24 col-lg-11">
           <?php echo $left_buff ?>
         </div>
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-24 col-lg-11">
           <?php echo $right_buff ?>
         </div>
       </div>
@@ -187,7 +183,7 @@
         <h1>F.A.Q.</h1>
       </header>
       <div class="row between-sm">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-24 col-md-7 col-lg-6">
           <h3 class="aside-heading">Quick Links</h3>
           <p class="aside-heading-sub">About Justice Democrats</p>
           <ul class="aside-list">
@@ -204,7 +200,7 @@
             <li><a href="#">Ornare dapibus nibh nibh ut est?</a></li>
           </ul>
         </div>
-        <div class="col-xs-12 col-md-8">
+        <div class="col-xs-24 col-md-16">
           <h2 class="content-heading">About Justice Democrats</h2>
           <dl class="comp-faq">
             <dt>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</dt>

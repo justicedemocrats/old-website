@@ -19,7 +19,7 @@
 <article class="landing-page">
   <section class="container-gr">
     <div class="row">
-      <div class="col-xs-12 col-lg-auto">
+      <div class="col-xs-24 col-lg-auto">
         <h1 class="page__title"><?php echo get_the_title(); ?></h1>
 
         <div class="page__content wysiwyg">

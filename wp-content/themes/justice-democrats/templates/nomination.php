@@ -19,7 +19,7 @@
 <article class="landing-page">
   <section class="container-gr">
     <div class="row">
-      <div class="col-xs-12 col-lg-auto">
+      <div class="col-xs-24 col-lg-auto">
         <h1 class="page__title"><?php echo get_the_title(); ?></h1>        
         <?php
         if($_GET['thanks'] == 1):
@@ -39,7 +39,7 @@
             <input type="hidden" name="utmCampaign">
             <input type="hidden" name="redirect" value="https://justicedemocrats.com/nominate?thanks=1">
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-24 col-md-12">
                 <fieldset>
                   <h2 class="legend">About You</h2>
                   <div class="field">
@@ -132,7 +132,7 @@
                   </div>
                 </fieldset>
               </div>
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-24 col-md-12">
             		<fieldset>
                   <h2 class="legend">Why This Nominee?</h2>
                   <div class="field">
@@ -176,7 +176,7 @@
               </div>
             </div>
             <div class="row center-xs nomination-submit">
-              <div class="col-xs-12">
+              <div class="col-xs-24">
                 <button type="submit" class="button button--large button--full-mobile">Nominate this person!</button>
               </div>
             </div>

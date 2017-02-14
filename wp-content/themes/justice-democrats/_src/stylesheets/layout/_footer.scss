@@ -35,6 +35,11 @@
 
   .highlight a {
     color: #6BA2AE;
+
+    &:hover,
+    &:focus {
+      color: setcolor(gray, dark);
+    }
   }
 
   li:not(.main-menu-item) {
