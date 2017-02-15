@@ -1,10 +1,11 @@
 /* Link styles */
-/*.menu-main a {
+.menu-main a {
     border-bottom: 3px solid transparent;
     color: #FFF; }
 .menu-main a:hover, .menu-main a:focus {
     border-bottom: 3px solid #B1FCFF;
-    color: #B1FCFF; }*/
+    color: #B1FCFF; }
+
 
 /* Emphasize footer sign-up link */
 /* ## use .highlight class when adding footer menu items */

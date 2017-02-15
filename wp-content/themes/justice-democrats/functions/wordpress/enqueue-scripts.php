@@ -6,7 +6,7 @@ function enqueue_custom_scripts() {
   wp_enqueue_style('style-main');
   
 
-    wp_register_style('manual-override',get_stylesheet_directory_uri().'/style-override.css', FALSE, '1.1.0', FALSE);
+    wp_register_style('manual-override',get_stylesheet_directory_uri().'/style-override.css', FALSE, '1.1.1', FALSE);
     wp_enqueue_style('manual-override');
 
   // Remove default jQuery and add Google hosted version to the footer
