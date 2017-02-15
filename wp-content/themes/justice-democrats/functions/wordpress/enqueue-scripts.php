@@ -2,11 +2,11 @@
 
 function enqueue_custom_scripts() {
   // Add main stylesheet
-  wp_register_style('style-main', (get_stylesheet_directory_uri() . '/style.css'), false, false, 'screen');
+  wp_register_style('style-main', (get_stylesheet_directory_uri() . '/style.css'), false, '4.7.10', 'screen');
   wp_enqueue_style('style-main');
   
 
-    wp_register_style('manual-override',get_stylesheet_directory_uri().'/style-override.css', FALSE, NULL, FALSE);
+    wp_register_style('manual-override',get_stylesheet_directory_uri().'/style-override.css', FALSE, '1.1.0', FALSE);
     wp_enqueue_style('manual-override');
 
   // Remove default jQuery and add Google hosted version to the footer
