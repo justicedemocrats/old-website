@@ -16,7 +16,7 @@
 <article class="landing-home">
   <section class="block-intro">
     <div class="block-intro__backdrop">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/banner-home.jpg" alt="">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner/banner-home.jpg" alt="Two young apprentice mechanics repairing an engine in a garage.">
     </div>
     <div class="block-intro__content">
       <div class="container-gr">
