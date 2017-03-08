@@ -2,6 +2,7 @@
   /*
   Template Name: Blackout
   */
+  get_header();
 ?>
 
 <article class="landing-home">
